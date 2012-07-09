@@ -4,8 +4,8 @@
 
 # Screenshooter
 
-A little Sinatra web service that, given a URL, takes a screenshot
-and uploads it to S3.
+A little web service that takes the URL of a web page and returns a URL to an 
+image of that page.
 
 We use this to create PNGs of SVGs served by our Rails apps and to make
 up-to-date images of Raphael graphics for sharing on Facebook and Twitter.
@@ -18,7 +18,8 @@ up-to-date images of Raphael graphics for sharing on Facebook and Twitter.
 
 ## Getting Started
 
-Create <code>s3.yml</code> from <code>s3.sample.yml</code> and add your S3 credentials.
+Create <code>s3.yml</code> from <code>s3.sample.yml</code> and add your S3 
+credentials.
 
 
 Start the server:
@@ -29,7 +30,12 @@ Start the server:
 From any machine, shoot a URL:
 
     curl "http://localhost:4567/?url=http://tycho.usno.navy.mil/cgi-bin/timer.pl"
-    curl "http://localhost:4567/?url=http://raphaeljs.com/tiger.html&width=300&height=200"
+    curl "http://localhost:4567/?url=http://raphaeljs.com/tiger.html&width=200&height=200"
+    
+And the images show up at:
+
+ * [http://bucketname.s3.aws.com/screenshooter/raphaeljs.com/tiger.html.png](http://assets.elections.huffingtonpost.com/ss/raphaeljs.com/tiger.html.png)
+ * [http://bucketname.s3.amazonaws.com/screenshooter/tycho.usno.navy.mil/cgi-bin/timer.pl.png](http://assets.elections.huffingtonpost.com.s3.amazonaws.com/ss/tycho.usno.navy.mil/cgi-bin/timer.pl.png)
 
 ## Authors
 
