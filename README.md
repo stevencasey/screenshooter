@@ -16,26 +16,19 @@ up-to-date images of Raphael graphics for sharing on Facebook and Twitter.
   * [ImageMagick](http://www.imagemagick.org/script/index.php)
   * [PhantomJS](http://phantomjs.org/)
 
-## Installation (Ubuntu)
-
-    apt-get install imagemagick
-    gem install sinatra aws-s3
-    install phantomjs (http://code.google.com/p/phantomjs/wiki/Installation)
-
 ## Getting Started
 
-Create s3.yml from s3.sample.yml, and add S3 credentials.
+1. Create <code>s3.yml</code> from <code>s3.sample.yml</code> and add your S3 credentials.
 
 
-Start the development server:
+2. Start the server:
 
     ruby -rubygems screenshooter.rb
 
 
-From any machine, shoot a URL:
+3. From any machine, shoot a URL:
 
     curl "http://localhost:4567/?url=http://tycho.usno.navy.mil/cgi-bin/timer.pl"
-
     curl "http://localhost:4567/?url=http://raphaeljs.com/tiger.html&width=300&height=200"
 
 ## Authors
