@@ -34,7 +34,7 @@ From any machine, shoot a URL:
     
 And the images show up at:
 
- * [http://bucketname.s3.aws.com/screenshooter/raphaeljs.com/tiger.html.png](http://assets.elections.huffingtonpost.com/ss/raphaeljs.com/tiger.html.png)
+ * [http://bucketname.s3.amazonaws.com/screenshooter/raphaeljs.com/tiger.html.png](http://assets.elections.huffingtonpost.com/ss/raphaeljs.com/tiger.html.png)
  * [http://bucketname.s3.amazonaws.com/screenshooter/tycho.usno.navy.mil/cgi-bin/timer.pl.png](http://assets.elections.huffingtonpost.com.s3.amazonaws.com/ss/tycho.usno.navy.mil/cgi-bin/timer.pl.png)
 
 ## Authors
