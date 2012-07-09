@@ -4,7 +4,7 @@
 
 # Screenshooter
 
-A little Sinatra/PhantomJS web service that, given a URL, takes a screenshot
+A little Sinatra web service that, given a URL, takes a screenshot
 and uploads it to S3.
 
 We use this to create PNGs of SVGs served by our Rails apps and to make
@@ -18,15 +18,15 @@ up-to-date images of Raphael graphics for sharing on Facebook and Twitter.
 
 ## Getting Started
 
-1. Create <code>s3.yml</code> from <code>s3.sample.yml</code> and add your S3 credentials.
+Create <code>s3.yml</code> from <code>s3.sample.yml</code> and add your S3 credentials.
 
 
-2. Start the server:
+Start the server:
 
     ruby -rubygems screenshooter.rb
 
 
-3. From any machine, shoot a URL:
+From any machine, shoot a URL:
 
     curl "http://localhost:4567/?url=http://tycho.usno.navy.mil/cgi-bin/timer.pl"
     curl "http://localhost:4567/?url=http://raphaeljs.com/tiger.html&width=300&height=200"
